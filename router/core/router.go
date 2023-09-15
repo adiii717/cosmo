@@ -98,7 +98,7 @@ type (
 // Alternatively, use Router.NewTestServer() to create a new Server instance without starting it for testing purposes.
 func NewRouter(opts ...Option) (*Router, error) {
 	r := &Router{}
-	r.graphqlPath = "/graphql"
+	r.graphqlPath = "/internal/graphql"
 
 	for _, opt := range opts {
 		opt(r)
