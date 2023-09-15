@@ -94,7 +94,7 @@ type (
 	Option func(svr *Router)
 )
 
-// NewRouter creates a new Router instance. Router.Start() must be called to start the server.
+// NewRouter creates a new Router instance. Router.Start() must be called to start the server. 
 // Alternatively, use Router.NewTestServer() to create a new Server instance without starting it for testing purposes.
 func NewRouter(opts ...Option) (*Router, error) {
 	r := &Router{}
